@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,9 @@ body {background-color: #303030; text-align: center; padding: 0 0.7cm;}
 }
 
 #codigoQR img {
-    border:2px solid white;
-    border-radius: 20px;
+    border:0.1cm solid white;
     margin:0 auto;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 #generar {
@@ -68,8 +67,8 @@ body {background-color: #303030; text-align: center; padding: 0 0.7cm;}
                 // Crea un nuevo elemento para el código QR
                 const qrCode = new QRCode(codigoQRDiv, {
                     text: texto,
-                    width: 400,
-                    height: 400,
+                    width: 360,
+                    height: 360,
                 });
             } else {
                 alert('Por favor, ingrese un texto.');
